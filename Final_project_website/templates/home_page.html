@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Health Insurance Cross Sell Prediction</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+<!-- calling local CSS -->
+    <link rel="stylesheet" href="../static/layout.css" />
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="main">
+		<div id="header">
+			<div class="heading1">
+    			 <span class="type">Water Quality Prediction</span>
+			</div>
+		</div>
+		<div id="content">
+			<div class="row">
+			 	<div class="col-md-3">&nbsp;</div>
+            	<div class="col-md-6 loginbox " >
+                	<form name="Prediction" id="Prediction" action="{{url_for('home')}}" method="post">
+                		<div class="row">
+                			<div class="col-md-6"><label style="text-align: center">Ph Value :</label></div>
+                    		<div class="col-md-6"><input type="text" id="ph" name="a" class="form form-control"></div>
+                		</div>
+                		<div class="clearfix">&nbsp;</div>
+                		<div class="row">
+                			<div class="col-md-6"><label style="text-align: center">Hardness :</label></div>
+                    		<div class="col-md-6"><input type="text" id="hardness" name="b" class="form form-control"></div>
+                		</div>
+                		<div class="clearfix">&nbsp;</div>
+                		<div class="row">
+                			<div class="col-md-6"><label style="text-align: center">Solids :</label></div>
+                    		<div class="col-md-6"><input type="text" id="solids" name="c" class="form form-control"></div>
+                		</div>
+                		<div class="clearfix">&nbsp;</div>
+                		<div class="row">
+                			<div class="col-md-6"><label style="text-align: center">Chlorsmines :</label></div>
+                    		<div class="col-md-6"><input type="text" id="chlorsmines" name="d" class="form form-control"></div>
+                		</div>
+                		<div class="clearfix">&nbsp;</div>
+                		<div class="row">
+                			<div class="col-md-6"><label style="text-align: center">Salfate :</label></div>
+                    		<div class="col-md-6"><input type="text" id="salfate" name="e" class="form form-control"></div>
+                		</div>
+                		<div class="clearfix">&nbsp;</div>
+                		<div class="row">
+                			<div class="col-md-6"><label style="text-align: center">Conductivity :</label></div>
+                    		<div class="col-md-6"><input type="text" id="conductivity" name="f" class="form form-control"></div>
+                		</div>
+                		<div class="clearfix">&nbsp;</div>
+                		<div class="row">
+                			<div class="col-md-6"><label style="text-align: center">Organic Carbon :</label></div>
+                    		<div class="col-md-6"><input type="text" id="carbon" name="g" class="form form-control"></div>
+                		</div>
+                		<div class="clearfix">&nbsp;</div>
+                		<div class="row">
+                			<div class="col-md-6"><label style="text-align: center">Trihalmothanes :</label></div>
+                    		<div class="col-md-6"><input type="text" id="trihalmothanes" name="h" class="form form-control"></div>
+                		</div>
+                		<div class="clearfix">&nbsp;</div>
+                		<div class="row">
+                			<div class="col-md-6"><label style="text-align: center">Turbidity :</label></div>
+                    		<div class="col-md-6"><input type="text" id="turbidity" name="i" class="form form-control"></div>
+                		</div>
+                		<div class="clearfix">&nbsp;</div>
+                    	<div class="row">
+                    		<input type="submit" name="Predict" id="Predict" class="predict" value="Predict"  />
+						</div>
+						<div class="row">
+                    		<button  name="button" id="button" class="button" ><a href="{{url_for('man')}}">home</a></button>
+						</div>
+                	</form>
+           		 </div>
+           		<div class="col-md-3">&nbsp;</div>
+        	</div>
+		</div>
+		<div id="footer"></div>
+	</div>
+</body>
+</html>
